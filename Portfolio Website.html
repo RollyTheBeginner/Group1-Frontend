@@ -160,19 +160,21 @@
       gap: 50px;
     }
 
-    .intro-text {
+      .intro-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       flex: 2;
       background: #17315a;
-      border-radius: 10px;
-      padding: 40px 40px 40px 40px;
-      margin: 0 40px 0 0;
+      border-radius: 18px;           /* Less rounded corners */
+      padding: 60px 32px 60px 32px;  /* More vertical padding, less horizontal */
+      margin: 0 20px 0 0;            /* Less margin on the right */
       box-shadow: 0 4px 24px 0 rgba(0,0,0,0.05);
       color: #cfe3ff;
-      align-items: center; /* Center content horizontally */
-      text-align: center;   /* Center text inside the box */
+      align-items: center;
+      text-align: center;
+      min-width: 500px;
+      max-width: 440px;
     }
 
     .intro-img-box {
@@ -314,6 +316,13 @@
   <div class="intro-img-box">
     <img src="images/ok.jpg" alt="Your photo" />
   </div>
+   <div class="bg-blue-900 rounded-xl shadow-lg p-8 ml-8 flex flex-col justify-center text-white min-w-[260px]">
+        <p class="mb-2"><span class="font-semibold">Name:</span> Johnrick Rabara</p>
+        <p class="mb-2"><span class="font-semibold">Age:</span> 23</p>
+        <p class="mb-2"><span class="font-semibold">Viber:</span> +961 790 3841</p>
+        <p class="mb-2"><span class="font-semibold">Address:</span> San Pedro City, PH</p>
+        <p><span class="font-semibold">Email:</span> jrabara101@gmail.com</p>
+      </div>
 </section>
 
   <section id="skills">
