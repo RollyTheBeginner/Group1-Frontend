@@ -289,13 +289,15 @@ footer {
 
 .work-experience-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
-  gap: 40px 60px; /* row gap, column gap */
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, auto);  
+  gap: 40px 40px;
   justify-items: center;
   align-items: start;
-  margin: 0 auto;
   max-width: 900px;
+  margin: 0 auto;
 }
+
 .work-card {
   background: rgba(23, 49, 90, 0.95);
   border-radius: 32px;
@@ -322,11 +324,13 @@ footer {
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #64ffda;
-  background: #112240;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px;
 }
+
 
 .work-card-img img {
   width: 100%;
@@ -367,7 +371,7 @@ footer {
 
 @media (max-width: 900px) {
   .work-experience-cards {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 32px;
     max-width: 95vw;
   }
