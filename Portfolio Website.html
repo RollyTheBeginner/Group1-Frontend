@@ -42,6 +42,24 @@
     </div>
   </nav>
 
+
+ <section id="chill-section" class="chill-section">
+  <div class="chill-flex">
+    <div class="chill-img-box">
+      <img src="images/yea.jpg" alt="Chill and Code" class="chill-img" />
+      <img src="images/yea.jpg" alt="Chill and Code" class="chill-img" />
+      <img src="images/yea.jpg" alt="Chill and Code" class="chill-img" />
+    </div>
+    <div class="chill-text-box">
+      <h2 class="chill-title">
+        Bored?<br>
+        Tired?<br>
+        <span class="chill-blue">Code</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
   <section id="about" class="intro">
     <div class="intro-text">
       <p class="hello-gradient" id="helloText">Hello!</p>
@@ -188,35 +206,48 @@
         <div class="carousel-card-body">
           <h3>Schlitterio</h3>
           <p>A snake game development. With a interaction of every apple, the color of boxes changes as it feeds the snake.</p>
+              <button class="card-btn" onclick="openProject('https://100-days-of-code-9ahf.vercel.app/')">View Project</button>
         </div>
       </div>
       <div class="carousel-card">
-        <img src="images/card2.jpg" alt="Card 2" />
+        <img src="images/Pacman.png" alt="Card 2" />
         <div class="carousel-card-body">
           <h3>React Pacman</h3>
           <p>Experience with playing pacman with surprising voice backgrounds every time you get eaten by ghosts, you lost the game, and win the game!</p>
+          <button class="card-btn" onclick="openProject('https://100-days-of-code-teal.vercel.app/')">View Project</button>
         </div>
       </div>
       <div class="carousel-card">
-        <img src="images/card3.jpg" alt="Card 3" />
+        <img src="images/data.png" alt="Card 3" />
         <div class="carousel-card-body">
-          <h3>Special title treatment</h3>
-          <p>With supporting text below as a natural lead-in to additional content.</p>
+          <h3>Data Visualization Sample Practice</h3>
+          <p>Practice Data Visualization using Javascript and Rapid API</p>
+          <button class="card-btn" onclick="openProject('https://fcb-data-visualization.vercel.app/')">View Project</button>
         </div>
       </div>
-      <!-- Add more cards as needed -->
     </div>
   </div>
 </section>
 
 
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <a href="mailto:jrabara101@gmail.com">Email Me</a>
-    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-  </section>
+<section id="contact" class="contact">
+  <h2 class="carousel-title">Contacts</h2>
+  <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-4">
+    <button class="contact-icon-btn" onclick="window.location.href='mailto:jrabara101@gmail.com'">
+      <img src="icons/Gmail.png" alt="Email" class="contact-icon-img" />
+      <span class="contact-label">Email Me</span>
+    </button>
+    <button class="contact-icon-btn" onclick="window.open('https://github.com/Jrabara101', '_blank')">
+      <img src="icons/Github.png" alt="GitHub" class="contact-icon-img" />
+      <span class="contact-label">GitHub</span>
+    </button>
+    <button class="contact-icon-btn" onclick="window.open('https://www.facebook.com/Jrabaraa/', '_blank')">
+      <img src="icons/Facebook.png" alt="LinkedIn" class="contact-icon-img" />
+      <span class="contact-label">Facebook</span>
+    </button>
+  </div>
+</section>
 
   <button id="backToTopBtn" title="Back to top">↑ Top</button>
 
@@ -311,6 +342,10 @@ nextBtn.addEventListener('click', () => {
 
 window.addEventListener('resize', updateCarousel);
 updateCarousel();
+
+function openProject(url) {
+  window.open(url, '_blank');
+}
 
 </script>
 
