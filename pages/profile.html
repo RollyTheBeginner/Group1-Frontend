@@ -10,54 +10,52 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen bg-white text-gray-800 text-lg sm:text-xl lg:text-2xl">
+<body class="min-h-screen bg-white text-gray-800 text-base sm:text-lg lg:text-xl">
 
     <div class="flex flex-col min-h-screen">
 
         <!-- Header -->
-        <header class="p-6">
+        <header class="p-4 sm:p-6">
             <nav>
                 <a href="/pages/rolly.html"
-                    class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 text-lg sm:text-xl">
+                    class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 text-base sm:text-lg">
                     <span aria-hidden="true">←</span> Back
                 </a>
             </nav>
         </header>
 
-
         <!-- Main Content -->
-        <main class="flex-1 flex items-center justify-center px-6">
-            <section class="flex flex-col lg:flex-row items-center justify-center gap-10 w-full max-w-7xl">
+        <main class="flex-1 flex items-center justify-center px-4 sm:px-6 max-h-auto">
+            <section class="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-10 w-full max-w-7xl">
 
                 <!-- Profile Image -->
                 <aside class="w-full lg:w-1/2 flex justify-center">
-                    <img src="../images/selfie.jpg" alt="Rolly"
-                        class="max-h-[80vh] w-auto rounded-2xl object-cover shadow-xl ring-1 ring-black/5" />
+                    <img id="step-image" src="../images/default.jpg" alt="Section image"
+                        class="max-h-[78vh] w-full max-w-md sm:max-w-lg object-cover rounded-2xl shadow-xl ring-1 ring-black/5 transition duration-500" />
                 </aside>
 
-                <!-- Step-by-step Section -->
-                <section class="w-full lg:w-1/2 text-center lg:text-left space-y-10">
+                <!-- Info Section -->
+                <section class="w-full lg:w-1/2 text-center lg:text-left space-y-10 px-2 sm:px-4">
 
                     <!-- Step 1: Basic Info -->
-                    <article class="step block">
+                    <article class="step block" data-image="../images/default.jpg">
                         <header>
-                            <h1 class="text-5xl font-bold">Rolly G. Jr Carrascal</h1>
-                            <p class="text-gray-600 text-lg sm:text-xl mb-4">Programmer</p>
-
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Rolly G. Jr Carrascal</h1>
+                            <p class="text-gray-600 mt-2 text-base sm:text-lg">Programmer</p>
                         </header>
                     </article>
 
                     <!-- Step 2: Personality -->
-                    <article class="step hidden">
+                    <article class="step hidden" data-image="../images/personality.jpg">
                         <header>
-                            <h2 class="text-4xl font-bold mb-3">Personality</h2>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-3">Personality</h2>
                         </header>
-                        <p class="text-lg sm:text-xl">
+                        <p>
                             I'm a builder at heart — focused, practical, and always eager to level up. I thrive in
                             environments where I can turn ideas into working systems, collaborate with others, and learn
                             fast along the way.
                         </p>
-                        <ul class="list-disc list-inside mt-4 space-y-2 text-lg sm:text-xl">
+                        <ul class="list-disc list-inside mt-4 space-y-2">
                             <li>Curious and hands-on problem-solver</li>
                             <li>Direct communicator, team-oriented when it counts</li>
                             <li>Detail-focused with a strong drive to improve</li>
@@ -67,72 +65,66 @@
                     </article>
 
                     <!-- Step 3: Experience -->
-                    <article class="step hidden">
+                    <article class="step hidden" data-image="../images/experience.jpg">
                         <header>
-                            <h2 class="text-3xl font-bold mb-3">Experience</h2>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-3">Experience</h2>
                         </header>
                         <div class="space-y-5">
-                            <article class="border border-gray-200 rounded-xl p-5 gap-10">
-                                <h3 class="font-semibold text-xl">Faculty Member / Sto. Niño de Novaliches School, Inc.
-                                    — March 2023 - May 2024</h3>
-                                <p class="text-gray-600 text-base sm:text-lg">Collaborated with educators and parents to
-                                    support student growth. Used games and activities to promote development and built
-                                    strong relationships through open communication and a positive classroom
-                                    environment.</p>
+                            <article class="border border-gray-200 rounded-xl p-5">
+                                <h3 class="font-semibold text-lg sm:text-xl">Faculty Member / Sto. Niño de Novaliches
+                                    School, Inc. — March 2023 - May 2024</h3>
+                                <p class="text-gray-600 text-sm sm:text-base mt-2">
+                                    Collaborated with educators and parents to support student growth. Used games and
+                                    activities to promote development and built strong relationships through open
+                                    communication and a positive classroom environment.
+                                </p>
                             </article>
-                            <article class="border border-gray-200 rounded-xl p-5 gap-10">
-                                <h3 class="font-semibold text-xl">Full-Stack Developer / Secret — July 2024 - Present
-                                </h3>
-                                <p class="text-base mt-2">
-                                    Developed a finance web application using ASP.NET MVC with a focus on dynamic forms,
-                                    clean architecture, and role-based access control.
-                                    Currently working as a full-stack developer on an e-commerce platform, building
-                                    it from the ground up using React, TypeScript, and .NET Web API.
-                                    Responsible for both front-end and back-end development, API integration, and
-                                    ensuring responsive, scalable performance across the system.
+                            <article class="border border-gray-200 rounded-xl p-5">
+                                <h3 class="font-semibold text-lg sm:text-xl">Full-Stack Developer / Secret — July 2024 -
+                                    Present</h3>
+                                <p class="text-sm sm:text-base mt-2">
+                                    Developed a finance web app using ASP.NET MVC with dynamic forms and role-based
+                                    access. Now building an e-commerce platform using React, TypeScript, and .NET Web
+                                    API. Handling both front-end and back-end, with a focus on responsive, scalable
+                                    systems.
                                 </p>
                             </article>
                         </div>
                     </article>
 
                     <!-- Step 4: Interests -->
-                    <article class="step hidden">
+                    <article class="step hidden" data-image="../images/interest.jpg">
                         <header>
-                            <h2 class="text-3xl font-bold mb-3">Interests</h2>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-3">Interests</h2>
                         </header>
-                        <p class="text-base sm:text-lg">What I enjoy exploring inside and outside of work.</p>
+                        <p class="text-sm sm:text-base">What I enjoy exploring inside and outside of work.</p>
                         <div class="flex flex-wrap gap-3 mt-4">
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">Web Performance</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">UI/UX</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">Clean
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">Web Performance</span>
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">UI/UX</span>
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">Clean
                                 Architecture</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">Full-Stack
-                                Engineering</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">React &
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">React &
                                 TypeScript</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">.NET Core & Web
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">.NET Core & Web
                                 API</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">Open Source</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">AI Tools</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">System Design</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">Building from
-                                Scratch</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">Design Systems</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">Tech Content</span>
-                            <span class="px-4 py-1 rounded-full bg-gray-100 text-base sm:text-lg">Teaching</span>
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">Open Source</span>
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">System Design</span>
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">Design Systems</span>
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">Tech Content</span>
+                            <span class="px-4 py-1 rounded-full bg-gray-100 text-sm sm:text-base">Teaching</span>
                         </div>
                     </article>
 
                     <!-- Step 5: Current Work -->
-                    <article class="step hidden">
+                    <article class="step hidden" data-image="../images/working.jpg">
                         <header>
-                            <h2 class="text-3xl font-bold mb-3">What I'm Working to Improve</h2>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-3">What I'm Working to Improve</h2>
                         </header>
-                        <ul class="list-disc list-inside space-y-2 text-base sm:text-lg">
+                        <ul class="list-disc list-inside space-y-2 text-sm sm:text-base">
                             <li>Public speaking and expressing technical ideas clearly to non-devs.</li>
                             <li>Confidence in client presentations and live demos.</li>
-                            <li>Deep system design and architectural decision-making at scale.</li>
-                            <li>Time management when juggling multiple solo responsibilities.</li>
+                            <li>System design and architectural decision-making at scale.</li>
+                            <li>Time management while juggling solo dev responsibilities.</li>
                             <li>Letting go of perfectionism and shipping faster.</li>
                         </ul>
                     </article>
@@ -140,18 +132,48 @@
                     <!-- Step 6: Projects -->
                     <article class="step hidden">
                         <header>
-                            <h2 class="text-3xl font-bold mb-4">Showcasing Me</h2>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-4">Showcasing Me</h2>
                         </header>
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <a href="#" class="block border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
-                                <h3 class="font-semibold text-xl">Project Title</h3>
-                                <p class="text-gray-600 text-base sm:text-lg">One-liner about what makes it interesting.
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                            <!-- Project 1 -->
+                            <a href="http://wphproject-001-site1.jtempurl.com" target="_blank"
+                                class="block border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+                                <h3 class="font-semibold text-lg">Appointment Scheduling System</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">
+                                    Built with ASP.NET Core MVC, C#, MSSQL, and deployed via Microsoft Azure. Includes
+                                    dynamic settings, role-based access, and email notifications.
                                 </p>
                             </a>
-                            <a href="#" class="block border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
-                                <h3 class="font-semibold text-xl">Another Project</h3>
-                                <p class="text-gray-600 text-base sm:text-lg">Tech stack, role, and outcome.</p>
+
+                            <!-- Project 2 -->
+                            <a href="https://github.com/RollyTheBeginner/Group1-Frontend" target="_blank"
+                                class="block border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+                                <h3 class="font-semibold text-lg">Group1 E-Commerce Frontend</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">
+                                    Developed with React, TypeScript, Tailwind CSS, and React Router v6. Mobile-first
+                                    design with reusable components and clean UI.
+                                </p>
                             </a>
+
+                            <!-- Project 3 -->
+                            <a href="#" class="block border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+                                <h3 class="font-semibold text-lg">Inventory Management System</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">
+                                    Console-based C# app for tracking stock, sales, and reports. Designed for future
+                                    integration with barcode or RFID support.
+                                </p>
+                            </a>
+
+                            <!-- Project 4 -->
+                            <a href="#" class="block border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+                                <h3 class="font-semibold text-lg">Staycation Property Website</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">
+                                    Razor Pages + Tailwind CSS. Fully responsive with a Hero section, service carousel,
+                                    and contact form. Optimized for bookings.
+                                </p>
+                            </a>
+
                         </div>
                     </article>
 
@@ -160,26 +182,18 @@
         </main>
 
         <!-- Footer -->
-        <footer class="p-6 flex justify-between items-center">
-            <!-- Previous Button -->
+        <footer class="p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
             <a href="#" id="previous-btn" class="group block">
-                <figure class="text-left">
-                    <figcaption class="mt-3 flex items-center justify-start gap-2 text-gray-600 text-base sm:text-lg">
-                        <span aria-hidden="true"
-                            class="text-xl transition-transform group-hover:-translate-x-1">←</span>
-                        <span id="previous-label">Go back</span>
-                    </figcaption>
-                </figure>
+                <figcaption class="flex items-center gap-2 text-gray-600 text-base sm:text-lg">
+                    <span aria-hidden="true" class="text-xl transition-transform group-hover:-translate-x-1">←</span>
+                    <span id="previous-label">Go back</span>
+                </figcaption>
             </a>
-
-            <!-- Continue Button -->
             <a href="#" id="continue-btn" class="group block">
-                <figure class="text-right">
-                    <figcaption class="mt-3 flex items-center justify-end gap-2 text-gray-600 text-base sm:text-lg">
-                        <span id="continue-label">Click this to continue</span>
-                        <span aria-hidden="true" class="text-xl transition-transform group-hover:translate-x-1">→</span>
-                    </figcaption>
-                </figure>
+                <figcaption class="flex items-center gap-2 text-gray-600 text-base sm:text-lg">
+                    <span id="continue-label">Click this to continue</span>
+                    <span aria-hidden="true" class="text-xl transition-transform group-hover:translate-x-1">→</span>
+                </figcaption>
             </a>
         </footer>
     </div>
