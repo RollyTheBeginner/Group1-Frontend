@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Jegrick Sildora</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .minimal-hover {
+            transition: all 0.2s ease;
+        }
+        .minimal-hover:hover {
+            transform: translateY(-2px);
+        }
+        .typing-animation {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3s steps(30, end);
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+            margin: 4rem 0;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navs -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-6">
+            <div class="flex justify-between items-center">
+                <div class="mono text-lg font-medium text-gray-900">jegs.dev</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors text-sm">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-gray-900 transition-colors text-sm">Skills</a>
+                    <a href="#interests" class="text-gray-600 hover:text-gray-900 transition-colors text-sm">Interests</a>
+                    <a href="#growth" class="text-gray-600 hover:text-gray-900 transition-colors text-sm">Growth</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors text-sm">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+
+                <div class="mb-8">
+                    <img 
+                        src="../images/jegrick.jpg" 
+                        alt="Jegrick Sildora" 
+                        class="w-52 h-52 rounded-full mx-auto object-cover border-2 border-gray-200 shadow-sm"
+                    >
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+                    Jegrick Sildora
+                </h1>
+                <div class="typing-animation text-lg md:text-xl text-gray-600 mb-8 font-light">
+                    Aspiring Developer/DevSecOps Professional
+                </div>
+                <div class="text-lg md:text-xl text-gray-600 font-light">
+                    Bacolod City, NIR, Philippines
+                </div>
+                <p class="text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                    ESTP-T personality who enjoys learning web development and exploring DevSecOps. 
+                    Currently studying and building projects to improve my skills.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#contact" class="text-gray-900 border-b border-gray-900 pb-1 hover:border-gray-600 transition-colors">
+                        Let's connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="section-divider"></div>
+    <section id="about" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-light mb-16 text-center">About</h2>
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-lg font-medium mb-2 text-gray-900">Personality</h3>
+                        <p class="text-gray-600 leading-relaxed">ESTP-T — Active, flexible, and action-focused. I like solving problems quickly and believe the best ideas come from working with others.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium mb-2 text-gray-900">Approach</h3>
+                        <p class="text-gray-600 leading-relaxed">I learn best by doing projects and building a strong base. Every project teaches me something new, and I'm excited to use what I learn.</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6 text-sm">
+                        <div>
+                            <span class="text-gray-500">Location</span>
+                            <p class="font-medium">Bacolod City, NIR</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500">Type</span>
+                            <p class="font-medium">ESTP-T</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500">Focus</span>
+                            <p class="font-medium">Web Development</p>
+                            <p class="font-medium">DevSecOps</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500">Status</span>
+                            <p class="font-medium">Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-light mb-16 text-center">Skills & Learning</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-4 text-gray-900">Frontend Basics</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">HTML/CSS</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-4/5"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">JavaScript</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-1/2"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">TailwindCSS</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-3/4"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">React</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-2/5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-4 text-gray-900">Tools & Concepts</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Git/GitHub</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-3/5"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">APIs</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-2/5"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Responsive Design</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-3/4"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Linux Basics</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-1/3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-4 text-gray-900">Currently Learning</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Node.js</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-1/4"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Database Basics</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-1/5"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Security Testing</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-1/6"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">CI/CD Pipelines</span>
+                            <div class="w-20 bg-gray-200 rounded-full h-1">
+                                <div class="bg-gray-600 h-1 rounded-full w-1/5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <div class="section-divider"></div>
+    <section id="interests" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-light mb-16 text-center">Interests</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-2 text-gray-900">Computer Networking</h3>
+                    <p class="text-gray-600 text-sm">Learning how networks and internet systems work</p>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-2 text-gray-900">Linux</h3>
+                    <p class="text-gray-600 text-sm">Learning the power of open-source systems</p>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-2 text-gray-900">Cloud Computing</h3>
+                    <p class="text-gray-600 text-sm">Interested in how cloud systems work and grow</p>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-2 text-gray-900">Web3</h3>
+                    <p class="text-gray-600 text-sm">Learning about the future of the web</p>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-2 text-gray-900">Cybersecurity</h3>
+                    <p class="text-gray-600 text-sm">Exploring purple teaming and security operations</p>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-2 text-gray-900">Innovation</h3>
+                    <p class="text-gray-600 text-sm">Always curious about new technologies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth Areas Section -->
+    <div class="section-divider"></div>
+    <section id="growth" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-light mb-8 text-center">Growth Areas</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+                Being honest about areas where I'm still learning makes me a better developer.
+            </p>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-3 text-gray-900">Public Speaking</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Even though I'm outgoing, presenting projects to the class or at tech events 
+                        still makes me nervous. I'm practicing with smaller groups first.
+                    </p>
+                    <div class="w-full bg-gray-200 rounded-full h-1">
+                        <div class="bg-gray-600 h-1 rounded-full w-1/4"></div>
+                    </div>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-3 text-gray-900">Backend Development</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Just starting to learn server-side programming. I understand basic ideas but 
+                        need more practice with databases and server work.
+                    </p>
+                    <div class="w-full bg-gray-200 rounded-full h-1">
+                        <div class="bg-gray-600 h-1 rounded-full w-1/5"></div>
+                    </div>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-3 text-gray-900">Code Quality</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        I know my code works, but I'm still learning about best practices, 
+                        clean code rules, and writing code that's easy to maintain.
+                    </p>
+                    <div class="w-full bg-gray-200 rounded-full h-1">
+                        <div class="bg-gray-600 h-1 rounded-full w-1/3"></div>
+                    </div>
+                </div>
+                <div class="minimal-hover">
+                    <h3 class="text-lg font-medium mb-3 text-gray-900">Project Management</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        My ESTP personality sometimes leads to starting too many projects at once. 
+                        Learning to focus on one thing at a time and finish what I start.
+                    </p>
+                    <div class="w-full bg-gray-200 rounded-full h-1">
+                        <div class="bg-gray-600 h-1 rounded-full w-2/5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="section-divider"></div>
+    <section id="contact" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-light mb-8">Contact</h2>
+            <p class="text-gray-600 mb-16 max-w-2xl mx-auto">
+                Interested in working on projects together or just want to connect? I'm always excited to learn from others and work as a team.
+            </p>
+            <div class="grid md:grid-cols-2 gap-12 text-center">
+                <a href="https://www.linkedin.com/in/jegrick-sildora/" target="_blank" rel="noopener noreferrer" class="minimal-hover block">
+                    <div class="mb-3">
+                        <i class="fab fa-linkedin text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-medium mb-2 text-gray-900">LinkedIn</h3>
+                    <p class="text-gray-600 text-sm">linkedin.com/in/jegrick-sildora</p>
+                </a>
+                <a href="https://github.com/jegs-sildora" target="_blank" rel="noopener noreferrer" class="minimal-hover block">
+                    <div class="mb-3">
+                        <i class="fab fa-github text-2xl text-gray-800"></i>
+                    </div>
+                    <h3 class="font-medium mb-2 text-gray-900">GitHub</h3>
+                    <p class="text-gray-600 text-sm">github.com/jegs-sildora</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mono text-lg font-medium text-gray-900 mb-4">jegs.dev</div>
+            <p class="text-gray-600 text-sm">&copy; 2025 Jegrick Sildora</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const headerHeight = 100;
+                const targetPosition = target.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
